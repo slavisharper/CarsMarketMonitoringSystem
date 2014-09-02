@@ -3,8 +3,9 @@
     using System;
 
     using CarsMarketMonitoringSystem.Models;
-    using Excel;
     using CarsMarketMonitoringSystem.Data.MongoDb;
+    using Excel;
+
     /// <summary>
     /// Class that controls getting and loading the data from outer
     /// sourses to the central MS SQL Server
