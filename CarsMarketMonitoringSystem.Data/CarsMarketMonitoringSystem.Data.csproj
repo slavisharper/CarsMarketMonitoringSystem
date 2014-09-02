@@ -70,6 +70,7 @@
     <Compile Include="MongoDb\Mappings\SellerMap.cs" />
     <Compile Include="MongoDb\MongoDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Xml\Parsers\XmlParser.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CarsMarketMonitoringSystem.Models\CarsMarketMonitoringSystem.Models.csproj">
@@ -81,6 +82,10 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <Content Include="Xml\Schemas\ExpensesSchema.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\nuget.targets" />

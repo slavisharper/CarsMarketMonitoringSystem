@@ -1,0 +1,8 @@
+﻿<Expenses>
+  <Expense>
+    <ExpenseId>1</ExpenseId>
+    <ManufacturerId>1</ManufacturerId>
+    <ExpenseValue>30</ExpenseValue>
+    <Month>2005-01-01</Month>
+  </Expense>
+</Expenses>
