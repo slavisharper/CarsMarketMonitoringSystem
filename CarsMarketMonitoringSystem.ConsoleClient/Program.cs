@@ -11,8 +11,7 @@
         {
             var manager = new DataManager();
             //DatabaseModelTest(manager);
-            var sales = manager.DatabaseContex.Cars.Take(10).ToList();
-            Console.WriteLine(sales.Count);
+            manager.ImportExelReports("../../../Sales-reports.zip");
         }
 
         private static void DatabaseModelTest(DataManager manager)
