@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="Car.cs" />
     <Compile Include="CarsMarketDbContext.cs" />
+    <Compile Include="Expense.cs" />
     <Compile Include="Location.cs" />
     <Compile Include="Manufacturer.cs" />
     <Compile Include="Migrations\Configuration.cs" />
