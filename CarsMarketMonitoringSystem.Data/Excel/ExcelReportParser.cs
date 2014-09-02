@@ -11,7 +11,7 @@
     public class ExcelReportParser
     {
         private const string DataProvider = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=";
-        private const string ExtendedProperties = ";Extended Properties=\"Excel 12.0; HDR=Yes;IMEX=1\"";
+        private const string ExtendedProperties = ";Extended Properties=\"Excel 12.0; HDR=No\"";
 
         private string connectionString;
         private FileInfo file;
@@ -35,27 +35,26 @@
             oleDbCon.Open();
             using (oleDbCon)
             {
-                OleDbCommand readAllCommand = new OleDbCommand(
-                    @"SELECT * FROM [Sales$B2:E]", oleDbCon);
-                var reader = readAllCommand.ExecuteReader();
+                var readTable = new OleDbCommand("SELECT * FROM [Sales$B4:E]", oleDbCon);
+                var reader = readTable.ExecuteReader();
                 using (reader)
                 {
                     while (reader.Read())
                     {
-                        var carId = reader["Pesho Cars Report"];
-                        var sellerId = reader["F2"];
-                        var date = reader["F3"];
-                        var price = reader["F4"];
+                        int carId = int.Parse(reader[0].ToString());
+                        int sellerId = int.Parse(reader[1].ToString());
+                        DateTime date = (DateTime)reader[2];
+                        decimal price = decimal.Parse(reader[3].ToString());
 
-                        //var sale = new Sale()
-                        //{
-                        //    CarId = carId,
-                        //    Date = date,
-                        //    SellerId = sellerId,
-                        //    Price = price
-                        //};
-                        //
-                        //sales.Add(sale);
+                        var sale = new Sale()
+                        {
+                            CarId = carId,
+                            Date = date,
+                            SellerId = sellerId,
+                            Price = price
+                        };
+                        
+                        sales.Add(sale);
                     }
                 }
             }
