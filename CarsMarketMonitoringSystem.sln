@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarsMarketMonitoringSystem.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarsMarketMonitoringSystem.ConsoleClient", "CarsMarketMonitoringSystem.ConsoleClient\CarsMarketMonitoringSystem.ConsoleClient.csproj", "{9570746C-36A2-4534-AFF5-1911D738C09F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarsMarketMonitoringSystem.Data.Tests", "CarsMarketMonitoringSystem.Data.Tests\CarsMarketMonitoringSystem.Data.Tests.csproj", "{7C71C780-5BA1-431A-B23D-4148C7A7BE16}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{E4E034EA-12FB-4099-9704-44EC27F9CCBD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,8 +31,15 @@ Global
 		{9570746C-36A2-4534-AFF5-1911D738C09F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9570746C-36A2-4534-AFF5-1911D738C09F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9570746C-36A2-4534-AFF5-1911D738C09F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C71C780-5BA1-431A-B23D-4148C7A7BE16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C71C780-5BA1-431A-B23D-4148C7A7BE16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C71C780-5BA1-431A-B23D-4148C7A7BE16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C71C780-5BA1-431A-B23D-4148C7A7BE16}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7C71C780-5BA1-431A-B23D-4148C7A7BE16} = {E4E034EA-12FB-4099-9704-44EC27F9CCBD}
 	EndGlobalSection
 EndGlobal
