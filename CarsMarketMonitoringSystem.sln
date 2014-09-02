@@ -1,13 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.30723.0
-MinimumVisualStudioVersion = 10.0.40219.1
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarsMarketMonitoringSystem.Models", "CarsMarketMonitoringSystem.Models\CarsMarketMonitoringSystem.Models.csproj", "{DAA724BB-F937-430F-B1D4-66DAAF0A2B0A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarsMarketMonitoringSystem.Data", "CarsMarketMonitoringSystem.Data\CarsMarketMonitoringSystem.Data.csproj", "{EF5C213C-4CA9-48E8-B2DA-029927970115}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarsMarketMonitoringSystem.ConsoleClient", "CarsMarketMonitoringSystem.ConsoleClient\CarsMarketMonitoringSystem.ConsoleClient.csproj", "{9570746C-36A2-4534-AFF5-1911D738C09F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{26469F6E-7E19-4428-8EBA-6DB46FFE49D8}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

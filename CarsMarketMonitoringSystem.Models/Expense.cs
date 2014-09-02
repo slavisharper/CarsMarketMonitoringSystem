@@ -7,14 +7,14 @@
     public class Expense
     {
         [Key]
-        public int ExpenceId { get; set; }
+        public int ExpenseId { get; set; }
 
         [ForeignKey("Manufacturer")]
         public int ManufacturerId { get; set; }
 
         public Manufacturer Manufacturer { get; set; }
 
-        public decimal Expences { get; set; }
+        public decimal Expenses { get; set; }
 
         public DateTime Month { get; set; }
     }
