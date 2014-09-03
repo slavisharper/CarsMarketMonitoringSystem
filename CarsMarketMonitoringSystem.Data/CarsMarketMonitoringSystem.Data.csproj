@@ -78,6 +78,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Pdf-reporter\" />
     <Folder Include="Xml\Parsers\" />
   </ItemGroup>
   <ItemGroup>
