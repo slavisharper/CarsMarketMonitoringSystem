@@ -10,7 +10,7 @@
     public class SellerMap
     {
         [BsonConstructor]
-        public SellerMap(int sellerId, string name, int locationId, ICollection<Car> cars)
+        public SellerMap(int sellerId, string name, int locationId, ICollection<Car> cars = null)
         {
             this.SellerId = sellerId;
             this.Name = name;

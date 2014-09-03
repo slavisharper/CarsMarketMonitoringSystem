@@ -11,7 +11,9 @@
         {
             var manager = new DataManager();
             //DatabaseModelTest(manager);
-            manager.ImportExelReports("../../../Sales-reports.zip");
+            //manager.ImportExelReports("../../../Sales-reports.zip");
+            var mongoFiller = new MongoDbFiller(manager);
+            mongoFiller.FillDataBase();
         }
 
         private static void DatabaseModelTest(DataManager manager)
