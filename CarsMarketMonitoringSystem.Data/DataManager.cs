@@ -81,7 +81,9 @@ using System.Collections.Generic;
         public void ExportDataToMySQL(IEnumerable<SaleModel> sales) 
         {
             var sqlManager = new MySQLReportsManager();
+            sqlManager.UpdateDatabase();
             sqlManager.AddSales(sales);
+            
         }
 
         public void ExpordPDFReports()

@@ -20,8 +20,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarsMarketMonitoringSystem.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{E4E034EA-12FB-4099-9704-44EC27F9CCBD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySQLConnector", "MySQLConnector\MySQLConnector.csproj", "{6F9C2621-695C-4BDE-881B-157DCAA75C07}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarsMarketMonitoringSystem.MySqlConnector", "CarsMarketMonitoringSystem.MySqlConnector\CarsMarketMonitoringSystem.MySqlConnector.csproj", "{D4E82B2A-2060-4A61-8EAF-805E9E6D79CF}"
 EndProject
 Global
@@ -46,10 +44,6 @@ Global
 		{7C71C780-5BA1-431A-B23D-4148C7A7BE16}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C71C780-5BA1-431A-B23D-4148C7A7BE16}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C71C780-5BA1-431A-B23D-4148C7A7BE16}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6F9C2621-695C-4BDE-881B-157DCAA75C07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6F9C2621-695C-4BDE-881B-157DCAA75C07}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6F9C2621-695C-4BDE-881B-157DCAA75C07}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6F9C2621-695C-4BDE-881B-157DCAA75C07}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D4E82B2A-2060-4A61-8EAF-805E9E6D79CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D4E82B2A-2060-4A61-8EAF-805E9E6D79CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4E82B2A-2060-4A61-8EAF-805E9E6D79CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
