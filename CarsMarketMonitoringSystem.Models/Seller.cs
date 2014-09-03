@@ -7,9 +7,12 @@
     public class Seller
     {
         private ICollection<Car> cars;
+        private ICollection<Sale> sales;
+
         public Seller()
         {
             this.cars = new HashSet<Car>();
+            this.sales = new HashSet<Sale>();
         }
 
         [Key]
@@ -34,6 +37,12 @@
             {
                 this.cars = value;
             }
+        }
+
+        public virtual ICollection<Sale> Sales
+        {
+            get { return this.sales; }
+            set { this.sales = value; }
         }
     }
 }

@@ -12,7 +12,8 @@ namespace CarsMarketMonitoringSystem.Models
             : base("CarsMarketDatabase")
         {
             Database.SetInitializer(
-                    new MigrateDatabaseToLatestVersion<CarsMarketDbContext, Configuration>()); //
+                   // new MigrateDatabaseToLatestVersion<CarsMarketDbContext, Configuration>());
+                new DropCreateDatabaseAlways<CarsMarketDbContext>());
         }
 
         public IDbSet<Car> Cars { get; set; }
@@ -36,6 +37,11 @@ namespace CarsMarketMonitoringSystem.Models
 
             modelBuilder.Entity<Seller>()
                 .HasRequired(s => s.Location)
+                .WithMany()
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<Sale>()
+                .HasRequired(s => s.Seller)
                 .WithMany()
                 .WillCascadeOnDelete(false);
         }
