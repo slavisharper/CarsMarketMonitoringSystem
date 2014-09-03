@@ -2,8 +2,11 @@
 {
     using CarsMarketMonitoringSystem.Data;
     using CarsMarketMonitoringSystem.Models;
+    using CarsMarketMonitoringSystem.MySqlConnector;
     using System;
+    using System.Collections.Generic;
     using System.Linq;
+    using Telerik.OpenAccess; 
 
     public class Program
     {
@@ -11,7 +14,24 @@
         {
             var manager = new DataManager();
             //DatabaseModelTest(manager);
-            manager.ImportExelReports("../../../Sales-reports.zip");
+            //manager.ImportExelReports("../../../Sales-reports.zip");
+            var saleOld = new Sale();
+                saleOld.SaleId = 1;
+                saleOld.CarId = 1;
+                saleOld.SellerId = 1;
+                saleOld.Price = 1300;
+                saleOld.Date = DateTime.Now;
+                manager.ExportJSONReports(new List<Sale>() { saleOld });
+
+            var saleModel = new SaleModel();
+
+            saleModel.SaleId = 1;
+            saleModel.CarId = 1;
+            saleModel.SellerId = 1;
+            saleModel.Price = 1300;
+            saleModel.Date = DateTime.Now;
+
+            manager.ExportDataToMySQL(new List<SaleModel>() { saleModel });
         }
 
         private static void DatabaseModelTest(DataManager manager)
@@ -27,7 +47,7 @@
                 LocationId = 1,
                 Name = "BMW-Sofia"
             });
-            
+
             manager.DatabaseContex.Cars.Add(new Car()
             {
                 ManufacturerId = 1,
@@ -51,5 +71,6 @@
 
             manager.DatabaseContex.SaveChanges();
         }
+
     }
 }

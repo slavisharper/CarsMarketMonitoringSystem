@@ -5,6 +5,10 @@
     using CarsMarketMonitoringSystem.Models;
     using CarsMarketMonitoringSystem.Data.MongoDb;
     using Excel;
+    using JSON;
+    using MySQL;
+using System.Collections.Generic;
+    using CarsMarketMonitoringSystem.MySqlConnector;
 
     /// <summary>
     /// Class that controls getting and loading the data from outer
@@ -66,6 +70,22 @@
         public void ImportManufacturersExpenses(string xmlFilePath)
         {
             throw new NotImplementedException();
+        }
+
+        public void ExportJSONReports(IEnumerable<Sale> sales)
+        {
+            var jsonManager = new JSONReportManager();
+            jsonManager.GenerateJSONReports(sales, "../../Generated-reports");
+        }
+
+        public void ExportDataToMySQL(IEnumerable<SaleModel> sales) 
+        {
+            var sqlManager = new MySQLReportsManager();
+            sqlManager.AddSales(sales);
+        }
+
+        public void ExpordPDFReports()
+        { 
         }
     }
 }

@@ -12,7 +12,8 @@ namespace CarsMarketMonitoringSystem.Models
             : base("CarsMarketDatabase")
         {
             Database.SetInitializer(
-                    new MigrateDatabaseToLatestVersion<CarsMarketDbContext, Configuration>()); //
+                   // new MigrateDatabaseToLatestVersion<CarsMarketDbContext, Configuration>());
+                new DropCreateDatabaseAlways<CarsMarketDbContext>());
         }
 
         public IDbSet<Car> Cars { get; set; }
