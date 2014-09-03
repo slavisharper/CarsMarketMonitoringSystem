@@ -22,5 +22,10 @@
 
         [Required]
         public decimal BasePrice { get; set; }
+
+        [ForeignKey("Seller")]
+        public int SellerId { get; set; }
+
+        public virtual Seller Seller {get; set;}
     }
 }

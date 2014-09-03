@@ -14,7 +14,10 @@
 
         public virtual Car Car { get; set; }
 
+        [ForeignKey("Seller")]
         public int SellerId { get; set; }
+
+        public virtual Seller Seller { get; set; }
 
         public decimal Price { get; set; }
 

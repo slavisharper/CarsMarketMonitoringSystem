@@ -6,10 +6,12 @@
 
     public class Seller
     {
+        private ICollection<Car> cars;
         private ICollection<Sale> sales;
 
         public Seller()
         {
+            this.cars = new HashSet<Car>();
             this.sales = new HashSet<Sale>();
         }
 
@@ -23,6 +25,19 @@
         public int LocationId { get; set; }
 
         public virtual Location Location { get; set; }
+
+        public virtual ICollection<Car> Cars 
+        {
+            get
+            {
+                return this.cars;
+            }
+
+            set
+            {
+                this.cars = value;
+            }
+        }
 
         public virtual ICollection<Sale> Sales
         {

@@ -52,6 +52,7 @@
                     TopSpeed = car.TopSpeed,
                     BrakeHorsePower = car.BrakeHorsePower,
                     BasePrice = car.BasePrice,
+                    SellerId = car.SellerId
                 });
             }
         }
@@ -126,6 +127,7 @@
                     SellerId = seller.SellerId,
                     Name = seller.Name,
                     LocationId = seller.LocationId,
+                    Cars = seller.Cars
                 });
             }
         }
