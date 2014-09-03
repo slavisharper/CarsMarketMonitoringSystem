@@ -69,6 +69,7 @@
     <Compile Include="MongoDb\Mappings\ManufacturerMap.cs" />
     <Compile Include="MongoDb\Mappings\SellerMap.cs" />
     <Compile Include="MongoDb\MongoDbContext.cs" />
+    <Compile Include="PdfReporter\PdfReporter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -78,7 +79,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Pdf-reporter\" />
     <Folder Include="Xml\Parsers\" />
   </ItemGroup>
   <ItemGroup>
