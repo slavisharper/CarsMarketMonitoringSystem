@@ -27,21 +27,21 @@ namespace CarsMarketMonitoringSystem.ConsoleClient
 
         private void AddCars()
         {
-            this.manager.MongoDbContext.Cars.Insert(new CarMap(19, "316", 8, 260, 100, 10000));
-            this.manager.MongoDbContext.Cars.Insert(new CarMap(20, "SL500", 9, 280, 150, 20000));
-            this.manager.MongoDbContext.Cars.Insert(new CarMap(21, "E200", 9, 200, 90, 10000));
-            this.manager.MongoDbContext.Cars.Insert(new CarMap(22, "Astra", 10, 260, 120, 9000));
-            this.manager.MongoDbContext.Cars.Insert(new CarMap(23, "Corsa", 10, 220, 80, 5000));
-            this.manager.MongoDbContext.Cars.Insert(new CarMap(24, "Fabia", 11, 240, 110, 12000));
-            this.manager.MongoDbContext.Cars.Insert(new CarMap(25, "Yaris", 13, 250, 130, 11000));
-            this.manager.MongoDbContext.Cars.Insert(new CarMap(26, "Niva", 12, 160, 70, 3000));
-            this.manager.MongoDbContext.Cars.Insert(new CarMap(27, "1500", 12, 170, 80, 3500));
-            this.manager.MongoDbContext.Cars.Insert(new CarMap(28, "Corolla", 13, 260, 130, 16000));
-            this.manager.MongoDbContext.Cars.Insert(new CarMap(29, "Swift", 34, 260, 1300, 9000));
-            this.manager.MongoDbContext.Cars.Insert(new CarMap(30, "Vitara", 34, 200, 140, 11000)); 
-            this.manager.MongoDbContext.Cars.Insert(new CarMap(31, "Civic", 14, 260, 150, 15000));
-            this.manager.MongoDbContext.Cars.Insert(new CarMap(32, "Accord", 14, 270, 180, 16000));
-            this.manager.MongoDbContext.Cars.Insert(new CarMap(33, "Pilot", 14, 260, 200, 20000));
+            this.manager.MongoDbContext.Cars.Insert(new CarMap(19, "316", 8, 260, 100, 10000, 15));
+            //this.manager.MongoDbContext.Cars.Insert(new CarMap(20, "SL500", 9, 280, 150, 20000));
+            //this.manager.MongoDbContext.Cars.Insert(new CarMap(21, "E200", 9, 200, 90, 10000));
+            //this.manager.MongoDbContext.Cars.Insert(new CarMap(22, "Astra", 10, 260, 120, 9000));
+            //this.manager.MongoDbContext.Cars.Insert(new CarMap(23, "Corsa", 10, 220, 80, 5000));
+            //this.manager.MongoDbContext.Cars.Insert(new CarMap(24, "Fabia", 11, 240, 110, 12000));
+            //this.manager.MongoDbContext.Cars.Insert(new CarMap(25, "Yaris", 13, 250, 130, 11000));
+            //this.manager.MongoDbContext.Cars.Insert(new CarMap(26, "Niva", 12, 160, 70, 3000));
+            //this.manager.MongoDbContext.Cars.Insert(new CarMap(27, "1500", 12, 170, 80, 3500));
+            //this.manager.MongoDbContext.Cars.Insert(new CarMap(28, "Corolla", 13, 260, 130, 16000));
+            //this.manager.MongoDbContext.Cars.Insert(new CarMap(29, "Swift", 34, 260, 1300, 9000));
+            //this.manager.MongoDbContext.Cars.Insert(new CarMap(30, "Vitara", 34, 200, 140, 11000)); 
+            //this.manager.MongoDbContext.Cars.Insert(new CarMap(31, "Civic", 14, 260, 150, 15000));
+            //this.manager.MongoDbContext.Cars.Insert(new CarMap(32, "Accord", 14, 270, 180, 16000));
+            //this.manager.MongoDbContext.Cars.Insert(new CarMap(33, "Pilot", 14, 260, 200, 20000));
         }
 
         private void AddManufacturers()

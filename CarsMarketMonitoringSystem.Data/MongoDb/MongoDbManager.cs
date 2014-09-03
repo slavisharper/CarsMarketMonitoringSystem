@@ -20,12 +20,19 @@
 
         public void ImportData()
         {
-            this.AddCars();
-            this.AddExpenses();
+            //this.AddExpenses();
             this.AddLocations();
+            this.SaveChanges();
+            Console.WriteLine("Locations added");
             this.AddManufacturers();
+            this.SaveChanges();
+            Console.WriteLine("Manufacturers added");
             this.AddSellers();
             this.SaveChanges();
+            Console.WriteLine("Sellers added");
+            this.AddCars();
+            this.SaveChanges();
+            Console.WriteLine("Cars added");
         }
 
         public void AddCars()
@@ -45,6 +52,7 @@
                     TopSpeed = car.TopSpeed,
                     BrakeHorsePower = car.BrakeHorsePower,
                     BasePrice = car.BasePrice,
+                    SellerId = car.SellerId
                 });
             }
         }
@@ -66,6 +74,7 @@
                     Month = expense.Month
                 });
             }
+
         }
 
         public void AddLocations()

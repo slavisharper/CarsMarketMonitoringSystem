@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CarsMarketMonitoringSystem.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,18 +9,18 @@ namespace CarsMarketMonitoringSystem.Data.PdfReporter
 {
     public class PdfReporter
     {
-        private DataManager manager;
+        private CarsMarketDbContext database;
 
-        public PdfReporter(DataManager manager)
+        public PdfReporter(CarsMarketDbContext database)
         {
-            this.manager = manager;
+            this.database = database;
         }
 
         public void GenerateReportsForMonth(int year, int month)
         {
-            var sales = this.manager.DatabaseContex.Sales
-                .Where(s => s.Date.Year == year && s.Date.Month == month)
-                .GroupBy(s => s.SaleId);
+            var sales = this.database.Sales
+                //.Where(s => s.Date.Year == year && s.Date.Month == month)
+                .GroupBy(s => s.SaleId).ToList();
             
         }
     }

@@ -39,6 +39,11 @@ namespace CarsMarketMonitoringSystem.Models
                 .HasRequired(s => s.Location)
                 .WithMany()
                 .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<Sale>()
+                .HasRequired(s => s.Seller)
+                .WithMany()
+                .WillCascadeOnDelete(false);
         }
     }
 }

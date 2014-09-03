@@ -7,6 +7,7 @@
     using Excel;
     using JSON;
     using MySQL;
+    using CarsMarketMonitoringSystem.Data.PdfReporter;
     using System.Collections.Generic;
     using CarsMarketMonitoringSystem.MySqlConnector;
 
@@ -86,8 +87,10 @@
             
         }
 
-        public void ExpordPDFReports()
-        { 
+        public void ExportPDFReports(int year, int month)
+        {
+            var pdfReporter = new PdfReporter.PdfReporter(this.dbContext);
+            pdfReporter.GenerateReportsForMonth(year, month);
         }
     }
 }

@@ -8,6 +8,7 @@
     {
         private ICollection<Car> cars;
         private ICollection<Sale> sales;
+
         public Seller()
         {
             this.cars = new HashSet<Car>();
