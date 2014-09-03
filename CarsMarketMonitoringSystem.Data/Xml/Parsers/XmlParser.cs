@@ -31,9 +31,9 @@ namespace CarsMarketMonitoringSystem.Data.Xml
 
                 expensesParsed.Add(new Expense()
                 {
-                    ExpenceId = int.Parse(expenceId),
+                    ExpenseId = int.Parse(expenceId),
                     ManufacturerId = int.Parse(manufacturerId),
-                    Expences = decimal.Parse(expenses),
+                    Expenses = decimal.Parse(expenses),
                     Month = DateTime.Parse(month)
                 });
             }
